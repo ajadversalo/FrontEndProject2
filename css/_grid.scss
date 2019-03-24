@@ -1,0 +1,27 @@
+/* Grid Styles */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* Grid Column Widths */
+.one-half {
+	width: 48%;
+}
+
+.one-third {
+	width: 30.6666666667%;
+}
+
+@media screen and (max-width: 560px){
+	
+	/* Make Grid Columns 
+	   Single Columns on Mobile */
+	.one-half,
+	.one-third {
+		width: 100%;
+	}
+	
+}
+

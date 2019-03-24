@@ -1,0 +1,19 @@
+/* mid banner styles */
+.mid-banner {
+	position: relative;
+}
+
+.mid-banner h2 {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3rem;
+}
+
+@media screen and (max-width: 900px){	
+	.mid-banner h2 {
+		font-size: 7vw;
+	}
+}

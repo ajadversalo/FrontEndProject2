@@ -1,0 +1,22 @@
+footer {
+	background-color: #003F91;
+	color: white;
+	padding: 30px;
+}
+
+footer a {
+	color: white;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+	color: white;
+}
+
+@media screen and (max-width: 400px){
+	
+	footer {
+		padding: 20px;
+	}	
+}

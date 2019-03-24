@@ -1,0 +1,35 @@
+/* bottom banner styles */
+.bottom-banner {
+	background-color: #F2F2F2;
+	padding: 90px 0;
+}
+
+.bottom-banner p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.bottom-banner a {
+	color: white;
+	display: block;
+	background-color: #003F91;
+	padding: 14px 40px;
+	width: 200px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 900px){
+		
+
+	
+	.bottom-banner {
+		padding: 30px;
+	}
+	
+}
