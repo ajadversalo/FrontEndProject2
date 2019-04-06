@@ -3,13 +3,13 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
 
-function render(x) {
-    for (var i=0; i<completeSchedule.length; i++) {
-        document.write("<thead class='thead-dark'><th>"+ monthNames[completeSchedule[i].month[0].date.getMonth()] + "</th></thead>");
-        for(var j=0; j<completeSchedule[i].month.length;j++){
-            document.write("<tr><td>" + completeSchedule[i].month[j].date.toDateString());
-            document.write("<p>" + completeSchedule[i].month[j].lesson + "</p>");
-            document.write("<p>" + completeSchedule[i].month[j].instructor + "</p></td></tr>");
+function render(schedule) {
+    for (var i=0; i<schedule.length; i++) {
+        document.write("<thead class='thead-dark'><th>"+ monthNames[schedule[i].month[0].date.getMonth()] + "</th></thead>");
+        for(var j=0; j<schedule[i].month.length;j++){
+            document.write("<tr><td>" + schedule[i].month[j].date.toDateString());
+            document.write("<p>" + schedule[i].month[j].lesson + "</p>");
+            document.write("<p>" + schedule[i].month[j].instructor + "</p></td></tr>");
         }
     }
 }
@@ -58,8 +58,7 @@ var completeSchedule = [
     },    
 ];
 
-render(completeSchedule);
-
+ render(completeSchedule);
 
 
 
