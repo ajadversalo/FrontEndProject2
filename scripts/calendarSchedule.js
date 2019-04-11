@@ -5,7 +5,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 
 function render(schedule) {
     for (var i = 0; i < schedule.length; i++) {
-        document.write("<thead class='thead-dark'><th>" + monthNames[schedule[i].month[0].date.getMonth()] + "</th></thead>");
+        document.write("<thead class='thead-dark calendarTable'><th>" + monthNames[schedule[i].month[0].date.getMonth()] + "</th></thead>");
         for (var j = 0; j < schedule[i].month.length; j++) {
             document.write("<tr><td>" + schedule[i].month[j].date.toDateString());
             document.write("<p>" + schedule[i].month[j].lesson + "</p>");
