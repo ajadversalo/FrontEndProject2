@@ -86,6 +86,9 @@ function render(schedule) {
         {
             //november
             month: [
+                { date: new Date(2018, 10, 29), lesson: '', instructor: '' },
+                { date: new Date(2018, 09, 30), lesson: '', instructor: '' },
+                { date: new Date(2018, 09, 31), lesson: '', instructor: '' },
                 { date: new Date(2018, 10, 01), lesson: 'Presentation Skills', instructor: 'Marlene Delanghe' },
                 { date: new Date(2018, 10, 02), lesson: 'Angular & React', instructor: 'Pat McGee' },
                 { date: new Date(2018, 10, 05), lesson: 'C# LINQ and Windows Forms', instructor: 'Pat McGee' },
@@ -107,10 +110,7 @@ function render(schedule) {
                 { date: new Date(2018, 10, 27), lesson: 'JavaScript', instructor: 'Jason Harrison' },
                 { date: new Date(2018, 10, 28), lesson: 'Angular & React.js', instructor: 'Pat McGee' },
                 { date: new Date(2018, 10, 29), lesson: 'Android Introduction', instructor: 'Paul Mills' },
-                { date: new Date(2018, 10, 30), lesson: 'ASP.NET – MVC', instructor: 'Phil Weier' },
-                { date: new Date(2018, 11, 01), lesson: '', instructor: '' },
-                { date: new Date(2018, 11, 02), lesson: '', instructor: '' },
-                { date: new Date(2018, 11, 03), lesson: '', instructor: '' }
+                { date: new Date(2018, 10, 30), lesson: 'ASP.NET – MVC', instructor: 'Phil Weier' }
             ]
         },
         {
