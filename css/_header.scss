@@ -1,11 +1,11 @@
 /* header styles */
 header {
-	background-color: #53687E;
+	background-color: #1C3F77;
 	height: 90px;
 }
 
 header .container {
-	background-color: #53687E;
+	background-color: #1C3F77;
 	padding: 0 30px;
 	display: flex;
 	flex-wrap: wrap;
@@ -30,6 +30,13 @@ header h1 a {
 	margin: 0;
 	line-height: 90px;
 	font-size: 3rem;
+	float: left;
+}
+
+header h2 a {
+	margin: 0;
+	line-height: 90px;
+	font-size: 2rem;
 	float: left;
 }
 
