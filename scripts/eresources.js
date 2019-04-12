@@ -25,7 +25,7 @@ var resources = [
             
             { title: 'Brackets', link: 'http://brackets.io/', 
             description: "With focused visual tools and preprocessor support, Brackets is a modern text editor that makes it easy to design in the browser. It's crafted from the ground up for web designers and front-end developers.",
-            image: 'images/brackets.jpg', alt: 'Brackets Logo' },
+            image: 'images/brackets.png', alt: 'Brackets Logo' },
             
             { title: 'Android Studio', link: 'https://developer.android.com/studio/index.html', 
             description: 'Android Studio provides the fastest tools for building apps on every type of Android device.',
