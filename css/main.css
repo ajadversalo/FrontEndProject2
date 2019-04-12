@@ -7,10 +7,14 @@ footer {
 footer a {
   color: white; }
 
+footer h2 {
+  font-family: "Archivo Black", "sans-serif"; }
+
 footer a:hover,
 footer a:active,
 footer a:focus {
-  color: white; }
+  color: #E26D5C;
+  text-decoration: none; }
 
 @media screen and (max-width: 400px) {
   footer {
@@ -145,7 +149,7 @@ header nav a:focus {
   text-align: center;
   line-height: 1.2;
   padding-left: 20px;
-  font-family: "Archivo Black"; }
+  font-family: "Archivo Black", "sans-serif"; }
 
 .top-banner h3 {
   font-size: 2rem;
@@ -215,6 +219,10 @@ header nav a:focus {
   text-transform: uppercase;
   margin: 0 auto; }
 
+.bottom-banner a:hover {
+  text-decoration: none;
+  color: #E26D5C; }
+
 @media screen and (max-width: 900px) {
   .bottom-banner {
     padding: 30px; } }
@@ -255,6 +263,14 @@ body {
 
 .process article h1 {
   text-align: center; }
+
+.process a {
+  color: #1A659E;
+  font-size: 2rem; }
+
+.process a:hover {
+  text-decoration: none;
+  color: #E26D5C; }
 
 /* Responsive Images Reset */
 img {
