@@ -78,8 +78,13 @@
                             </section>
                             <section>
                                 <h2>Contact Form</h2>
-                                <form onsubmit="alert('Thank you for your feedback.');" method="post"
+                                <form onsubmit="myFunction()" method="put"
                                     class="contactForm">
+                                    <script>
+                                        function myFunction() {
+                                          alert("Thank you for your feedback!");
+                                        }
+                                        </script>
                                     <div class="formRow">
                                         <div class="formLabel">
                                             <label for="firstname">First name</label>
