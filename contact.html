@@ -32,28 +32,35 @@
                 <h1>Contact Us!</h1>
                 <div>
                     <section class="process">
-                        <h2>Helpful Links</h2>
-                        <ul>
-                            <li><a href="https://secure.bcit.ca/sis/apply/">Start your application.</a></li>
-                            <li><a href="https://secure.bcit.ca/sis/apply/">Check your application status.</a></li>
-                            <li><a href="https://www.bcit.ca/international/">Find more information for international
-                                    students.</a></li>
-                            <li><a href="https://www.bcit.ca/finaid/">Find more information about financial aids.</a>
-                            </li>
-                        </ul>
+                        <div class='card'>
+                            <div class="card-header">
+                                <h3>Helpful Links</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><a href="https://secure.bcit.ca/sis/apply/">Start your application.</a></li>
+                                    <li><a href="https://secure.bcit.ca/sis/apply/">Check your application status.</a></li>
+                                    <li><a href="https://www.bcit.ca/international/">Find more information for international students.</a></li>
+                                    <li><a href="https://www.bcit.ca/finaid/">Find more information about financial aids.</a></li>
+                                </ul>
+                            </div>
+                        </div>    
                     </section>
+                    
                     <section class="process">
-                        <h2>Contact Information</h2>
-                        <div class="contactInfo">
-                            <section class="box">
+                        <div class='card'>
+                            <div class="card-header">
+                                    <h3>Contact Information</h3>
+                            </div>
+                            <div class="card-body">
                                 <h4>For admission and program inquiries: </h4>
                                 <ul>
                                     <li><b>Phone: </b>604.412.7788</li>
                                     <li><b>Fax: </b>604.408.0921</li>
                                     <li><b>Email: </b>HTP@bcit.ca</li>
                                 </ul>
-                            </section>
-                            <section class="box">
+                            </div>
+                            <div class="card-body">
                                 <h4>Mailing Adress</h4>
                                 <ul>
                                     <li>
@@ -63,78 +70,85 @@
                                         V6B 3H6
                                     </li>
                                 </ul>
-                            </section>
-                            <section>
-                                <h2>Contact Form</h2>
-                                <form onsubmit="myFunction()" method="put"
-                                    class="contactForm">
-                                    <script>
-                                        function myFunction() {
-                                          alert("Thank you for your feedback!");
-                                        }
-                                        </script>
-                                    <div class="formRow">
-                                        <div class="formLabel">
-                                            <label for="firstname">First name</label>
+                            </div>
+                        </div>
+
+                        <div class="process">
+                            <div class='card'>
+                                <div class="card-header">
+                                    <h3>Contact Form</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form onsubmit="myFunction()" method="put"
+                                        class="contactForm">
+                                        <script>
+                                            function myFunction() {
+                                                alert("Thank you for your feedback!");
+                                            }
+                                            </script>
+                                        <div class="formRow">
+                                            <div class="formLabel">
+                                                <label for="firstname">First name</label>
+                                            </div>
+                                            <div>
+                                                <input type="text" class="formInput" name="firstname" id="firstname"
+                                                    maxlength="80" placeholder="First Name" required="">
+                                            </div>
                                         </div>
-                                        <div>
-                                            <input type="text" class="formInput" name="firstname" id="firstname"
-                                                maxlength="80" placeholder="First Name" required="">
+                                        <div class="formRow">
+                                            <div class="formLabel">
+                                                <label for="lastname">Last name</label>
+                                            </div>
+                                            <div>
+                                                <input type="text" class="formInput" name="lastname" id="lastname"
+                                                    maxlength="80" placeholder="Last Name" required="">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="formRow">
-                                        <div class="formLabel">
-                                            <label for="lastname">Last name</label>
+                                        <div class="formRow">
+                                            <div class="formLabel">
+                                                <label for="email">Email</label>
+                                            </div>
+                                            <div>
+                                                <input type="email" class="formInput" name="email" id="email" maxlength="80"
+                                                    placeholder="email@example.com" required="">
+                                            </div>
                                         </div>
-                                        <div>
-                                            <input type="text" class="formInput" name="lastname" id="lastname"
-                                                maxlength="80" placeholder="Last Name" required="">
+                                        <div class="formRow">
+                                            <div class="formLabel">
+                                                <label for="phone">Phone</label>
+                                            </div>
+                                            <div>
+                                                <input type="tel" class="formInput" name="phone" id="phone" maxlength="30"
+                                                    placeholder="(123) 456 - 7890">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="formRow">
-                                        <div class="formLabel">
-                                            <label for="email">Email</label>
+                                        <div class="formRow">
+                                            <div class="select">
+                                                <label><input type="radio" name="status" value="CurrentStudent" required="">
+                                                    Current Student</label><br>
+                                                <label><input type="radio" name="status" value="ProsoectiveStudent">
+                                                    Prosoective Student</label><br>
+                                                <label><input type="radio" name="status" value="Instructor">
+                                                    Instructor</label>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <input type="email" class="formInput" name="email" id="email" maxlength="80"
-                                                placeholder="email@example.com" required="">
+                                        <div class="formRow">
+                                            <div>
+                                                <label for="comments">Questions or Comments</label>
+                                            </div>
+                                            <div>
+                                                <textarea class="formInput" name="comments" id="comments" rows="5" cols="23"
+                                                    required=""></textarea>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="formRow">
-                                        <div class="formLabel">
-                                            <label for="phone">Phone</label>
+                                        <div class="formRow">
+                                            <div class="actions">
+                                                <input id="submit" type="submit" value="send » ">
+                                            </div>
                                         </div>
-                                        <div>
-                                            <input type="tel" class="formInput" name="phone" id="phone" maxlength="30"
-                                                placeholder="(123) 456 - 7890">
-                                        </div>
-                                    </div>
-                                    <div class="formRow">
-                                        <div class="select">
-                                            <label><input type="radio" name="status" value="CurrentStudent" required="">
-                                                Current Student</label><br>
-                                            <label><input type="radio" name="status" value="ProsoectiveStudent">
-                                                Prosoective Student</label><br>
-                                            <label><input type="radio" name="status" value="Instructor">
-                                                Instructor</label>
-                                        </div>
-                                    </div>
-                                    <div class="formRow">
-                                        <div>
-                                            <label for="comments">Questions or Comments</label>
-                                        </div>
-                                        <div>
-                                            <textarea class="formInput" name="comments" id="comments" rows="5" cols="23"
-                                                required=""></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="formRow">
-                                        <div class="actions">
-                                            <input id="submit" type="submit" value="send » ">
-                                        </div>
-                                    </div>
-                                </form>
-                            </section>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
         </main>
         <footer>
